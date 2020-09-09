@@ -4,6 +4,13 @@
 	src:url("fonts/CascadiaCodePL.ttf") format("truetype");
 }
 
+    
+@-webkit-keyframes Bar {
+  0%{color: transparent;}
+  50%{color: red;}
+  100%{color: transparent;}
+}
+
 html {
   background-color: black;
   color: white;
@@ -21,8 +28,16 @@ Header > h3 {
   color: white;
 }
 
+.bar {
+	-webkit-animation: Bar 1s linear 0s infinite;
+}
+
 footer, section {
 	padding: 3em 0 3em 0;
+}
+
+footer {
+	line-height: 2em;
 }
 
 h1, h2, h3, .copy, .insta {
@@ -57,19 +72,26 @@ strong {
 
 a {
 	color: cornflowerblue;
-	text-decoration: none;
+	-webkit-text-decoration-skip: edges;
+	-webkit-text-decoration-skip-ink: auto;
+  text-decoration-style: underline;
+	text-decoration-thickness: 1px;
+}
+
+dfn, sup {
+	color: silver;
+}
+
+.check {
+	font-size: 1em;
+	line-height: 1em;
 }
 
 .tel {
 	color: red;
-	font-size: 2em;
+	font-size: 2.3em;
 }
 
-footer > a, footer > p {
-	color: white;
+small {
 	font-size: 1.5em;
-}
-
-.legal {
-	color: white;
 }
