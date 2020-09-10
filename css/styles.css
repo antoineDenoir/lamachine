@@ -4,32 +4,23 @@
 	src:url("fonts/CascadiaCodePL.ttf") format("truetype");
 }
 
-    
 @-webkit-keyframes Bar {
-  0%{color: transparent;}
-  50%{color: red;}
-  100%{color: transparent;}
+	0%{color: transparent;}
+	50%{color: red;}
+	100%{color: transparent;}
 }
 
 html {
-  background-color: black;
-  color: white;
+	background-color: black;
+	color: white;
 	font-family: "Cascadia Code", monospace;
-  font-size: 60%;
+	font-size: 60%;
 }
 
 body {
-  max-width: 600px;
-  margin: auto;
-  padding: 2em;
-}
-
-Header > h3 {
-  color: white;
-}
-
-.bar {
-	-webkit-animation: Bar 1s linear 0s infinite;
+	max-width: 600px;
+	margin: auto;
+	padding: 2em;
 }
 
 footer, section {
@@ -40,17 +31,17 @@ footer {
 	line-height: 2em;
 }
 
-h1, h2, h3, .copy, .insta {
+h1, h2, h3 {
 	color: lightslategrey;
 	font-weight: normal;
 }
 
 h1 {
-  font-size: 4em;
+	font-size: 4em;
 }
 
 h2 {
-  font-size: 3em;
+	font-size: 3em;
 }
 
 h3 {
@@ -61,8 +52,13 @@ p {
 	font-size: 2em;
 }
 
-section > p{
-	margin-bottom: 2em;
+a {
+	color: cornflowerblue;
+	color: white;
+	-webkit-text-decoration-skip: edges;
+	-webkit-text-decoration-skip-ink: auto;
+	text-decoration-style: underline;
+	text-decoration-thickness: 1px;
 }
 
 strong {
@@ -70,28 +66,41 @@ strong {
 	font-weight: normal;
 }
 
-a {
-	color: cornflowerblue;
-	-webkit-text-decoration-skip: edges;
-	-webkit-text-decoration-skip-ink: auto;
-  text-decoration-style: underline;
-	text-decoration-thickness: 1px;
-}
-
 dfn, sup {
-	color: silver;
-}
-
-.check {
-	font-size: 1em;
-	line-height: 1em;
-}
-
-.tel {
-	color: red;
-	font-size: 2.3em;
+	color: lightslategrey;
 }
 
 small {
 	font-size: 1.5em;
+}
+
+#bar {
+	-webkit-animation: Bar 1s linear 0s infinite;
+}
+
+Header > h3 {
+	color: white;
+}
+
+section > p{
+	margin-bottom: 2em;
+}
+
+#check {
+	font-size: 1em;
+	line-height: 1em;
+}
+
+#tel {
+	color: red;
+	font-size: 2.3em;
+}
+
+#arrow {
+	bottom: 2vh;
+	font-size: 3em;
+	font-weight: normal;
+	position: fixed;
+	right: 2vh;
+	text-decoration: none;
 }
