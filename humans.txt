@@ -1,0 +1,30 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Chef, Web Designer, Designer: antoineDenoir
+    Contact/Instagram: https://www.instagram.com/rrrdegris
+    From: Bordeaux, Aquitaine, France
+
+# THANKS
+
+    HTML5 Boilerplate
+    URL: https://html5boilerplate.com
+		
+		Microsoft Cascadia Code Team
+		URL: https://github.com/microsoft/cascadia-code
+
+    Everyone on the internet who shares knowledge, the list is too long...
+
+# SITE
+
+    Last update: 2020/09
+    Language: French
+    Doctype:HTML5
+    IDE: Textastic, VSCodium
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, CSS3, JavaScript
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
