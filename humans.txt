@@ -12,8 +12,8 @@
     HTML5 Boilerplate
     URL: https://html5boilerplate.com
 		
-		Microsoft Cascadia Code Team
-		URL: https://github.com/microsoft/cascadia-code
+    Microsoft Cascadia Code Team
+    URL: https://github.com/microsoft/cascadia-code
 
     Everyone on the internet who shares knowledge, the list is too long...
 
