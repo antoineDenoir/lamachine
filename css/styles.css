@@ -37,7 +37,7 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 4em;
+	font-size: 5em;
 }
 
 h2 {
@@ -48,7 +48,8 @@ h3 {
 	font-size: 2.3em;
 }
 
-p {
+h4, p {
+	font-weight: normal;
 	font-size: 2em;
 }
 
