@@ -21,7 +21,7 @@
 
     Last update: 2020/09
     Language: French
-    Doctype:HTML5
+    Doctype: HTML5
     IDE: Textastic, VSCodium
 
 # TECHNOLOGY COLOPHON
