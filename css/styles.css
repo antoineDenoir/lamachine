@@ -6,13 +6,13 @@
 
 @-webkit-keyframes Bar {
 	0%{color: transparent;}
-	50%{color: red;}
+	50%{color: orangered;}
 	100%{color: transparent;}
 }
 
 html {
 	background-color: black;
-	color: white;
+	color: floralwhite;
 	font-family: "Cascadia Code", monospace;
 	font-size: 60%;
 }
@@ -55,7 +55,7 @@ h4, p {
 
 a {
 	color: cornflowerblue;
-	color: white;
+	color: floralwhite;
 	-webkit-text-decoration-skip: edges;
 	-webkit-text-decoration-skip-ink: auto;
 	text-decoration-style: underline;
@@ -63,7 +63,7 @@ a {
 }
 
 strong {
-	color: red;
+	color: orangered;
 	font-weight: normal;
 }
 
@@ -72,6 +72,7 @@ dfn, sup {
 }
 
 small {
+	color: floralwhite;
 	font-size: 1.5em;
 }
 
@@ -80,7 +81,7 @@ small {
 }
 
 Header > h3 {
-	color: white;
+	color: floralwhite;
 }
 
 section > p{
@@ -93,15 +94,15 @@ section > p{
 }
 
 #tel {
-	color: red;
+	color: orangered;
 	font-size: 2.3em;
 }
 
 #arrow {
-	bottom: 2vh;
-	font-size: 3em;
-	font-weight: normal;
-	position: fixed;
-	right: 2vh;
-	text-decoration: none;
+bottom: 2vh;
+font-size: 3em;
+font-weight: normal;
+position: fixed;
+right: 2vh;
+text-decoration: none;
 }
