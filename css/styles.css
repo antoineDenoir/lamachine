@@ -1,7 +1,20 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @font-face {
 	font-family: "Cascadia Code";
 	src:url("fonts/CascadiaCodePL.woff2") format("woff2");
 	src:url("fonts/CascadiaCodePL.ttf") format("truetype");
+}
+
+@-webkit-keyframes Bar {
+	0%{color: transparent;}
+	50%{color: orangered;}
+	100%{color: transparent;}
 }
 
 @keyframes Bar {
@@ -38,6 +51,8 @@ h1, h2, h3 {
 }
 
 #Title {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -50,9 +65,17 @@ span:last-child {
 
 span:not(:last-child) {
 	left: -100vw;
-	position: absolute;
-	animation: Type 0s linear normal forwards;
+	-webkit-animation: Type 0s linear normal forwards;
+	        animation: Type 0s linear normal forwards;
 	white-space: pre;
+}
+
+@-webkit-keyframes Type {
+	from {left: -100vw}
+	to {
+		position: initial;
+		left: auto
+	}	
 }
 
 @keyframes Type {
@@ -63,16 +86,16 @@ span:not(:last-child) {
 	}	
 }
 
-#Title span:nth-child(1){animation-delay: 0.5s}
-#Title span:nth-child(2){animation-delay: 0.65s}
-#Title span:nth-child(3){animation-delay: 1s}
-#Title span:nth-child(4){animation-delay: 1.7s}
-#Title span:nth-child(5){animation-delay: 1.9s}
-#Title span:nth-child(6){animation-delay: 2.2s}
-#Title span:nth-child(7){animation-delay: 2.4s}
-#Title span:nth-child(8){animation-delay: 2.6s}
-#Title span:nth-child(9){animation-delay: 3s}
-#Title span:nth-child(10){animation-delay: 3.3s}
+#Title span:nth-child(1){-webkit-animation-delay: 0.5s;animation-delay: 0.5s}
+#Title span:nth-child(2){-webkit-animation-delay: 0.65s;animation-delay: 0.65s}
+#Title span:nth-child(3){-webkit-animation-delay: 1s;animation-delay: 1s}
+#Title span:nth-child(4){-webkit-animation-delay: 1.7s;animation-delay: 1.7s}
+#Title span:nth-child(5){-webkit-animation-delay: 1.9s;animation-delay: 1.9s}
+#Title span:nth-child(6){-webkit-animation-delay: 2.2s;animation-delay: 2.2s}
+#Title span:nth-child(7){-webkit-animation-delay: 2.4s;animation-delay: 2.4s}
+#Title span:nth-child(8){-webkit-animation-delay: 2.6s;animation-delay: 2.6s}
+#Title span:nth-child(9){-webkit-animation-delay: 3s;animation-delay: 3s}
+#Title span:nth-child(10){-webkit-animation-delay: 3.3s;animation-delay: 3.3s}
 
 h1 {
 	font-size: 5em;
@@ -95,7 +118,8 @@ a {
 	color: cornflowerblue;
 	-webkit-text-decoration-skip: edges;
 	-webkit-text-decoration-skip-ink: auto;
-	text-decoration-style: underline;
+	-webkit-text-decoration-style: underline;
+	        text-decoration-style: underline;
 	text-decoration-thickness: 1px;
 }
 
@@ -133,4 +157,4 @@ section > p{
 	position: fixed;
 	right: 2vh;
 	text-decoration: none;
-}
+	}
