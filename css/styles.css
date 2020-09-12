@@ -1,86 +1,109 @@
-<!doctype html>
-<html class="no-js" lang="fr">
+@font-face {
+	font-family: "Cascadia Code";
+	src:url("fonts/CascadiaCodePL.woff2") format("woff2");
+	src:url("fonts/CascadiaCodePL.ttf") format("truetype");
+}
 
-<head>
-  <meta charset="utf-8">
-  <title>La Machine</title>
-  <meta name="description" content="Entreprise de Dépannage Informatique Logiciel à Domicile à Bordeaux Centre">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="geo.region" content="FR-33" />
-  <meta name="geo.placename" content="Bordeaux" />
-  <meta name="geo.position" content="44.841225;-0.580036" />
-  <meta name="ICBM" content="44.841225, -0.580036" />
+@-webkit-keyframes Bar {
+	0%{color: transparent;}
+	50%{color: orangered;}
+	100%{color: transparent;}
+}
 
-  <meta name=”keywords” content=”informatique, dépannage, windows, données, logiciel, programme, domicile, disque, installation, virus, pc, mac” />
+html {
+	background-color: black;
+	color: floralwhite;
+	font-family: "Cascadia Code", monospace;
+	font-size: 60%;
+}
 
-  <meta property="og:title" content="La Machine">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://lamachine.site">
-  <meta name="og:image" content="">
-  <meta name="og:description" content="Entreprise de Dépannage Informatique Logiciel à Domicile à Bordeaux Centre">
+body {
+	max-width: 600px;
+	margin: auto;
+	padding: 2em;
+}
 
-  <meta name="author" content="rRRDEGRIS">
-  
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/styles.css">
-  
-  <meta name="theme-color" content="black">
-</head>
+footer, section {
+	padding: 3em 0 3em 0;
+}
 
-<body>
-  <header id="header">
-    <h1>La Machine<strong id="bar">|</strong></h1>
-    <h3>Dépannage Informatique Logiciel à Domicile<br>
-    <a href="https://www.google.com/maps/place/Centre-Ville,+Bordeaux/@44.8423155,-0.5813319,12z/data=!4m2!3m1!1s0xd5527de1e69cf0b:0xbb8f45ee7927dfa7" target="_blank">Bordeaux Centre</a></h3>
-      <h4>Windows, macOS, Linux, Android, iOS</h4>
-  </header>
+footer {
+	padding-top: 10em;
+	line-height: 2em;
+}
 
-    <section id="tarifs">
-      <h2>Tarifs</h2>
-      <p>Récupération de données: <strong>150€/500GB</strong></p>
-      <p>Installation<sup>1</sup>, configuration, nettoyage, optimisation, sécurisation du système d’exploitation: <strong>50€/h</strong></p>
-      <p>Mise en place de sauvegardes automatiques<sup>2</sup>: <strong>45€/h</strong></p>
-      <p>Détection et suppression de virus et autres logiciels malveillants: <strong>45€/h</strong></p>
-      <p>Conseils d’achat et sécurité: <strong>45€/h</strong></p>
-			<p>Récupération de mots de passe (Compte utilisateur, clef d’activation de logiciel<sup>3</sup>, compte cloud, etc...): <strong>70€/h</strong></p>
-      <p id="clefwin">Récupération clef d‘activation Windows<sup>4</sup>: <strong>25€</strong></p>
-      <p>Sauvegardes de données<sup>5</sup>: <strong>45€/250GB</strong></p>
-      <small><dfn>1, 3, 4 et 5: </dfn>Ne comprennent pas l’achat d’une clef d’activation du système d’exploitation ou de tout autre logiciel.<br><dfn>2 et 5: </dfn>Ne comprennent pas l’achat de disque dur ou tout autre support de stockage de données.</small>
-    </section>
-    
-    <section id="faq">
-      <h2>FAQ</h2>
-      <h3>Pourquoi le dépannage informatique “logiciel” ?</h3>
-      <p>Réalisées uniquement dans le centre ville de Bordeaux et dans le but de permettre une mobilité optimale, les interventions de dépannage concernent uniquement la partie logicielle (sytème d’exploitation, applications) et non matérielle (composants) des appareils.</p>
-      <h3>Préparer l’appareil avant intervention (dans la mesure du possible):</h3>
-      <p>Effectuer une sauvegarde de vos données importantes. Toute sauvegarde effectuée lors de l’intervention sera facturée (voir tarifs).</p>
-      <p>Recharger les appareils portables.</p>
-      <p>Tenir à disposition votre clef d’activation Windows ou de toute autre application/programme en cas de réinstallation nécessaire. Toute récupération effectuée lors de l’intervention sera facturée (<a href="#clefwin">voir tarifs</a>).</p>
-      <h3>Que faire en cas de pertes de données ?</h3>
-      <p>Dans le cas d’un effacement de données, et afin d’augmenter les chances de récupération, il est primordial de <strong>ne plus utiliser</strong> l’appareil ou le support les contenant.</p>
-      <h3>Quels sont les moyens de paiement acceptés pour régler les interventions ?</h3>
-      <p>Les espèces, cartes bleues, sans contact et virements bancaires. Les chèques ne sont pas acceptés (<a id="check" href="https://www.service-public.fr/professionnels-entreprises/vosdroits/F22929" title="Information officielle sur les refus de chèques" target="_blank">infos</a>).</p>
-    </section
-    
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Pour toute autre question, veuillez contacter le:</p>
-      <a id="tel" href="tel:+33783743288">078 374 3288</a>
-    </section>
-  </main>
-  
-  <footer>
-    <small><a id="legal" href="404.html">Mentions Légales</a> <a id="copy" href="404.html">&copy;2020 La Machine</a><br><a href="https://github.com/PowerShell/PowerShell">PowerShell Inside</a> <a href="https://www.openbsd.org">OpenBSD Squib</a><br>Identité Visuelle et Site réalisés par <a id="insta" href="https://www.instagram.com/rrrdegris">rRRDEGRIS</a></small>
-    <a id="arrow" href="#header">&uarr;</a>
-		<span id="daemon" style="visibility: hidden">&#128121</span>
-  </footer>
-  
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-</body>
-</html>
+h1, h2, h3 {
+	color: lightslategrey;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 5em;
+}
+
+h2 {
+	font-size: 3em;
+}
+
+h3 {
+	font-size: 2.3em;
+}
+
+h4, p {
+	font-weight: normal;
+	font-size: 2em;
+}
+
+a {
+	color: cornflowerblue;
+	color: floralwhite;
+	-webkit-text-decoration-skip: edges;
+	-webkit-text-decoration-skip-ink: auto;
+	text-decoration-style: underline;
+	text-decoration-thickness: 1px;
+}
+
+strong {
+	color: orangered;
+	font-weight: normal;
+}
+
+dfn, sup {
+	color: lightslategrey;
+}
+
+small {
+	color: floralwhite;
+	font-size: 1.5em;
+}
+
+#bar {
+	-webkit-animation: Bar 1s linear 0s infinite;
+}
+
+Header > h3 {
+	color: floralwhite;
+}
+
+section > p{
+	margin-bottom: 2em;
+}
+
+#check {
+	font-size: 1em;
+	line-height: 1em;
+}
+
+#tel {
+	color: orangered;
+	font-size: 2.3em;
+}
+
+#arrow {
+bottom: 2vh;
+font-size: 3em;
+font-weight: normal;
+position: fixed;
+right: 2vh;
+text-decoration: none;
+}
