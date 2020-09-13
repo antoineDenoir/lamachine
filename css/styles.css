@@ -11,17 +11,6 @@
 	src:url("fonts/CascadiaCodePL.ttf") format("truetype");
 }
 
-@-webkit-keyframes Type {
-	from {left: -100vw}
-	to {
-		position: initial; left: initial;}	
-}
-
-@keyframes Type {
-	from {left: -100vw}
-	to {position: initial; left: initial;}
-}
-
 @-webkit-keyframes Bar {
 	0%{color: transparent;}
 	50%{color: orangered;}
@@ -78,12 +67,25 @@ h4, p {
 	font-size: 2em;
 }
 
+#bar, strong {
+	color: orangered;
+}
+
+#bar {
+		animation: Bar 1s linear 0s infinite;
+		-webkit-animation: Bar 1s linear 0s infinite;
+}
+
+strong {
+	font-weight: normal;
+}
+
 a {
 	color: cornflowerblue;
 	-webkit-text-decoration-skip: edges;
 	-webkit-text-decoration-skip-ink: auto;
 	-webkit-text-decoration-style: underline;
-	        text-decoration-style: underline;
+	text-decoration-style: underline;
 	text-decoration-thickness: 1px;
 }
 
