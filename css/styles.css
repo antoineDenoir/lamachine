@@ -23,6 +23,16 @@
 	100%{color: transparent;}
 }
 
+@-webkit-keyframes Daemon {
+	from{visibility: hidden;}
+	to{visibility: visible;}
+}
+
+@keyframes Daemon {
+	from{visibility: hidden;}
+	to{visibility: visible;}
+}
+
 html {
 	background-color: black;
 	color: floralwhite;
@@ -31,8 +41,8 @@ html {
 }
 
 body {
-	max-width: 600px;
 	margin: auto;
+	max-width: 600px;
 	padding: 2em;
 }
 
@@ -41,8 +51,54 @@ footer, section {
 }
 
 footer {
-	padding-top: 10em;
 	line-height: 2em;
+	padding-top: 10em;
+}
+
+a {
+	-webkit-text-decoration-skip: edges;
+	-webkit-text-decoration-skip-ink: auto;
+	-webkit-text-decoration-style: underline;
+	-webkit-text-decoration-thickness: 1px;
+	color: cornflowerblue;
+	text-decoration-skip: edges;
+	text-decoration-skip-ink: auto;
+	text-decoration-style: underline;
+	text-decoration-thickness: 1px;
+}
+
+#arrow {
+	bottom: 2vh;
+	font-size: 3em;
+	font-weight: normal;
+	position: fixed;
+	right: 2vh;
+	text-decoration: none;
+}
+
+#bar, strong {
+	color: orangered;
+}
+
+#bar {
+	-webkit-animation: Bar 1s linear 0s infinite;
+	animation: Bar 1s linear 0s infinite;
+}
+
+#check {
+	line-height: 1em;
+	font-size: 1em;
+}
+
+#daemon {
+  -webkit-animation: Daemon 1s linear 10s;
+	animation: Daemon 1s linear 10s;
+	text-decoration: none;
+	visibility: hidden;
+}
+
+dfn, sup {
+	color: lightslategrey;
 }
 
 h1, h2, h3 {
@@ -63,64 +119,28 @@ h3 {
 }
 
 h4, p {
-	font-weight: normal;
 	font-size: 2em;
+	font-weight: normal;
 }
 
-#bar, strong {
-	color: orangered;
+header > h3 {
+	color: floralwhite;
 }
-
-#bar {
-		animation: Bar 1s linear 0s infinite;
-		-webkit-animation: Bar 1s linear 0s infinite;
+	
+small {
+	color: floralwhite;
+	font-size: 1.5em;
 }
 
 strong {
 	font-weight: normal;
 }
 
-a {
-	color: cornflowerblue;
-	-webkit-text-decoration-skip: edges;
-	-webkit-text-decoration-skip-ink: auto;
-	-webkit-text-decoration-style: underline;
-	text-decoration-style: underline;
-	text-decoration-thickness: 1px;
-}
-
-dfn, sup {
-	color: lightslategrey;
-}
-
-small {
-	color: floralwhite;
-	font-size: 1.5em;
-}
-
-header > h3 {
-	color: floralwhite;
-}
-
 section > p{
 	margin-bottom: 2em;
-}
-
-#check {
-	font-size: 1em;
-	line-height: 1em;
 }
 
 #tel {
 	color: orangered;
 	font-size: 2.3em;
 }
-
-#arrow {
-	bottom: 2vh;
-	font-size: 3em;
-	font-weight: normal;
-	position: fixed;
-	right: 2vh;
-	text-decoration: none;
-	}
