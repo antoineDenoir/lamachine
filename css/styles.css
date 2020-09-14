@@ -86,13 +86,10 @@ a {
 	text-decoration: none;
 }
 
-#bar, strong {
-	color: transparent;
-}
-
 #bar {
 	-webkit-animation: Bar 1s linear 0s infinite;
 	animation: Bar 1s linear 0s infinite;
+        color: transparent;
 }
 
 #check {
@@ -143,6 +140,7 @@ small {
 }
 
 strong {
+        color: orangered;
 	font-weight: normal;
 }
 
