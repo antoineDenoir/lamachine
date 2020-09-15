@@ -45,7 +45,7 @@
 
 html {
 	background-color: black;
-	color: floralwhite;
+	color: ivory;
 	font-family: "Cascadia Code", monospace;
 	font-size: 60%;
 }
@@ -70,7 +70,7 @@ a {
 	-webkit-text-decoration-skip-ink: auto;
 	-webkit-text-decoration-style: underline;
 	-webkit-text-decoration-thickness: 1px;
-	color: lightblue;
+	color: lightslategrey;
 	text-decoration-skip: edges;
 	text-decoration-skip-ink: auto;
 	text-decoration-style: underline;
@@ -130,16 +130,15 @@ h4, p {
 	font-weight: normal;
 }
 
-header > h3 {
-	color: floralwhite;
+header > h3, small{
+	color: ivory;
 }
 	
 small {
-	color: floralwhite;
 	font-size: 1.5em;
 }
 
-strong {
+strong, #tel {
 	color: orangered;
 	font-weight: normal;
 }
@@ -149,7 +148,6 @@ section > p{
 }
 
 #tel {
-	color: orangered;
 	font-size: 2.3em;
 }
 
@@ -170,8 +168,8 @@ section > p{
 	visibility: hidden;
 }
 
-#Title span:nth-child(1){-webkit-animation-delay: 0.5s;animation-delay: 0s}
-#Title span:nth-child(2){-webkit-animation-delay: 0.65s;animation-delay: 0.2s}
+#Title span:nth-child(1){-webkit-animation-delay: 0.5s;animation-delay: 0.2s}
+#Title span:nth-child(2){-webkit-animation-delay: 0.65s;animation-delay: 0.3s}
 #Title span:nth-child(3){-webkit-animation-delay: 1s;animation-delay: 0.4s}
 #Title span:nth-child(4){-webkit-animation-delay: 1.7s;animation-delay: 0.6s}
 #Title span:nth-child(5){-webkit-animation-delay: 1.9s;animation-delay: 0.8s}
