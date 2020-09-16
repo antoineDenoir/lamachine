@@ -11,16 +11,15 @@
 	src:url("fonts/CascadiaCodePL.ttf") format("truetype");
 }
 
-@-webkit-keyframes Bar {
-	0% {color: transparent;}
-	50% {color: orangered;}
-	100% {color: transparent;}
+@-webkit-keyframes Blinking {
+    from, to { border-color: transparent; }
+    50% { border-color: orangered; }
 }
 
-@keyframes Bar {
-	0% {color: transparent;}
-	50% {color: orangered;}
-	100% {color: transparent;}
+@keyframes Blinking {
+    from, to { border-color: transparent; }
+    50% { border-color: orangered; }
+	}
 }
 
 @-webkit-keyframes Daemon {
@@ -33,14 +32,16 @@
 	to {visibility: visible;}
 }
 
-@-webkit-keyframes Type {
-  from {}
-	to {visibility: visible;}
+@-webkit-keyframes Typing {
+    from,to { width: 100%; }
+    25% { width: 0; }
+    50% { width: 0; }
+    75% { width: 100%; }
 }
 
-@keyframes Type {
-  from {}
-	to {visibility: visible;}
+@keyframes Typing {
+    from { width: 100%; }
+    to { width: 0; }
 }
 
 html {
@@ -54,15 +55,6 @@ body {
 	margin: auto;
 	max-width: 600px;
 	padding: 2em;
-}
-
-footer, section {
-	padding: 3em 0 3em 0;
-}
-
-footer {
-	line-height: 2em;
-	padding-top: 10em;
 }
 
 a {
@@ -86,15 +78,23 @@ a {
 	text-decoration: none;
 }
 
-#bar {
-	-webkit-animation: Bar 1s linear 0s infinite;
-	animation: Bar 1s linear 0s infinite;
-	color: transparent;
-}
-
 #check {
 	line-height: 1em;
 	font-size: 1em;
+}
+
+#cursor {
+    -webkit-animation: Typing 2.7s steps(11, end) forwards, Blinking 1s infinite;
+    animation: Typing 2.7s steps(11, end) forwards, Blinking 1s infinite;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: black;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-left: 0.1em solid;
 }
 
 #daemon {
@@ -106,6 +106,15 @@ a {
 
 dfn, sup {
 	color: lightslategrey;
+}
+
+footer, section {
+	padding: 3em 0 3em 0;
+}
+
+footer {
+	line-height: 2em;
+	padding-top: 10em;
 }
 
 h1, h2, h3 {
@@ -151,31 +160,8 @@ section > p{
 	font-size: 2.3em;
 }
 
-#Title span {
-	display: inline-block;
-	position: relative;
-	white-space: pre;
+#Title a {
+    position: relative;
+    background-color: black;
+    text-decoration: none;
 }
-
-#Title span:last-child {
-	animation: Bar 1s linear 0s infinite;
-	-webkit-animation: Bar 1s linear 0s infinite;
-}
-
-#Title span:not(:last-child) {
-	-webkit-animation: Type 0.1s normal forwards;
-  animation: Type 0.1s normal forwards;
-	visibility: hidden;
-}
-
-#Title span:nth-child(1){-webkit-animation-delay: 0.5s;animation-delay: 0.2s}
-#Title span:nth-child(2){-webkit-animation-delay: 0.65s;animation-delay: 0.3s}
-#Title span:nth-child(3){-webkit-animation-delay: 1s;animation-delay: 0.4s}
-#Title span:nth-child(4){-webkit-animation-delay: 1.7s;animation-delay: 0.6s}
-#Title span:nth-child(5){-webkit-animation-delay: 1.9s;animation-delay: 0.8s}
-#Title span:nth-child(6){-webkit-animation-delay: 2.2s;animation-delay: 1.1s}
-#Title span:nth-child(7){-webkit-animation-delay: 2.4s;animation-delay: 1.2s}
-#Title span:nth-child(8){-webkit-animation-delay: 2.6s;animation-delay: 1.4s}
-#Title span:nth-child(9){-webkit-animation-delay: 3s;animation-delay: 1.6s}
-#Title span:nth-child(10){-webkit-animation-delay: 3.3s;animation-delay: 1.9s}
-#Title span:nth-child(11){-webkit-animation-delay: 3.3s;animation-delay: 2s}
