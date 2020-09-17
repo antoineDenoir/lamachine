@@ -3,7 +3,7 @@
 
 # TEAM
 
-    Chef, Web Designer, Designer: antoineDenoir
+    Chef, Web Designer, Designer: rRRDEGRIS
     Contact/Instagram: https://www.instagram.com/rrrdegris
     From: Bordeaux, Aquitaine, France
 
@@ -11,9 +11,12 @@
 
     HTML5 Boilerplate
     URL: https://html5boilerplate.com
-		
+
     Microsoft Cascadia Code Team
     URL: https://github.com/microsoft/cascadia-code
+
+    Autoprefixer
+    URL: https://autoprefixer.github.io
 
     Everyone on the internet who shares knowledge, the list is too long...
 
