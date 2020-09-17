@@ -8,6 +8,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <style>
+    /*
+    * Prefixed by https://autoprefixer.github.io
+    * PostCSS: v7.0.29,
+    * Autoprefixer: v9.7.6
+    * Browsers: last 4 version
+    */
+    
+    @-webkit-keyframes Toasty {
+      0% {bottom: -260px; right: -260px;}
+      40% {bottom: -18px; right: 10px;}
+      80% {bottom: -18px; right: 10px;}
+      100% {bottom: -260px; right: -260px;}
+    }
+    
+    @keyframes Toasty {
+      0% {bottom: -260px; right: -260px;}
+      40% {bottom: -18px; right: 10px;}
+      80% {bottom: -18px; right: 10px;}
+      100% {bottom: -260px; right: -260px;}
+    }
     
     * {
       line-height: 1.4;
@@ -16,7 +36,7 @@
     
     html {
       background-color: black;
-      color: white;
+      color: ivory;
       display: table;
       font-family: "Cascadia Code", monospace;
       height: 100%;
@@ -29,9 +49,32 @@
       vertical-align: middle;
       margin: 2em auto;
     }
-
+    
     a {
-      color: red;
+      color: orangered;
+      font-size: 2em;
+    }
+    
+    #Dan {
+      animation: Toasty 2s ease-out 200s alternate forwards;
+      right: 0;
+      bottom: 0;
+      display: block;
+      bottom: -5em;
+      font-size: 5em;
+      padding: 0;
+      position: fixed;
+      min-width: 200px;
+      right: 10px;
+      text-decoration: none;
+      -webkit-animation: Toasty 2s ease-out 200s alternate forwards;
+    }
+    
+    #Dan:focus,
+    #Dan:hover {
+      transform: rotate(1080deg);
+      transition: all 2s;
+      -webkit-animation-play-state: paused;
     }
     
     h1 {
@@ -43,37 +86,6 @@
     p {
       margin: 0 auto;
       width: 280px;
-    }
-    
-    .Dan {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-    }
-    
-    
-    @-webkit-keyframes Toasty {
-      0% {bottom: -260px; right: -260px;}
-      40% {bottom: -18px; right: 10px;}
-      80% {bottom: -18px; right: 10px;}
-      100% {bottom: -260px; right: -260px;}
-    }
-    
-    .Dan {
-      display: block;
-      bottom: -260px;
-      padding: 0;
-      position: fixed;
-      min-width: 200px;
-      right: 10px;
-      -webkit-animation: Toasty 2s ease-out 180s alternate forwards;
-    }
-    
-    .Dan:focus,
-    .Dan:hover {
-      transform: rotate(1080deg);
-      transition: all 2s;
-      -webkit-animation-play-state: paused;
     }
     
     @media only screen and (max-width: 280px) {
@@ -100,21 +112,19 @@
   <h2>Page inexistante :(</h2>
   
   <p>Désolé mais la page que vous recherchez n’existe pas.</p>
-
+  
   <a href="index.html">Retour à la Page d'Accueil</a>
   
   <audio id="Toasty" src="sound/Toasty.mp3" preload="auto"></audio>
   
-  <a href="esirprus.html">
-    <img class="Dan" src="img/Dan.png" title="Dan" onclick="document.getElementById('Applause').play();"/>
-  </a>
+  <a id="Dan" href="esirprus.html">&#128121</a>
   
   <script type="text/javascript">
     
     setTimeout(function(){
       document.getElementById("Toasty").play();
       
-    }, 3000)
+    }, 200000)
     
   </script>
   
