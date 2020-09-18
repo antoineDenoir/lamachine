@@ -11,14 +11,14 @@
 	src:url("fonts/CascadiaCodePL.ttf") format("truetype");
 }
 
-@-webkit-keyframes Blinking {
-    from, to { border-color: transparent; }
-    50% { border-color: orangered; }
+@-webkit-keyframes Blink {
+    from, to {border-color: transparent;}
+    50% {border-color: orangered;}
 }
 
-@keyframes Blinking {
-    from, to { border-color: transparent; }
-    50% { border-color: orangered; }
+@keyframes Blink {
+    from, to {border-color: transparent;}
+    50% {border-color: orangered;}
 }
 
 @-webkit-keyframes Daemon {
@@ -31,16 +31,16 @@
 	to {visibility: visible;}
 }
 
-@-webkit-keyframes Typing {
-    from,to { width: 100%; }
-    25% { width: 0; }
-    50% { width: 0; }
-    75% { width: 100%; }
+@-webkit-keyframes Type {
+    from,to {width: 100%;}
+    25% {width: 0;}
+    50% {width: 0;}
+    75% {width: 100%;}
 }
 
-@keyframes Typing {
-    from { width: 100%; }
-    to { width: 0; }
+@keyframes Type {
+    from {width: 100%;}
+    to {width: 0;}
 }
 
 html {
@@ -83,8 +83,8 @@ a {
 }
 
 #cursor {
-    -webkit-animation: Typing 2.7s steps(11, end) forwards, Blinking 1s infinite;
-    animation: Typing 2.7s steps(11, end) forwards, Blinking 1s infinite;
+    -webkit-animation: Type 2.7s steps(11, end) forwards, Blink 1s infinite;
+    animation: Type 2.7s steps(11, end) forwards, Blink 1s infinite;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -130,7 +130,7 @@ h2 {
 }
 
 h3 {
-	font-size: 2.3em;
+	font-size: 2.5em;
 }
 
 h4, p {
@@ -138,7 +138,7 @@ h4, p {
 	font-weight: normal;
 }
 
-header > h3, small{
+header h3, small {
 	color: ivory;
 }
 	
