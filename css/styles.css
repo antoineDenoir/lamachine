@@ -83,8 +83,8 @@ a {
 }
 
 #cursor {
-    -webkit-animation: Type 2.7s steps(11, end) forwards, Blink 1s infinite;
-    animation: Type 2.7s steps(11, end) forwards, Blink 1s infinite;
+    -webkit-animation: Type 2s steps(11, end) 0.5s forwards, Blink 1s infinite;
+    animation: Type 2s steps(11, end) 0.5s forwards, Blink 1s infinite;
     position: absolute;
     top: 0;
     bottom: 0;
