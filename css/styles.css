@@ -45,7 +45,7 @@
 
 html {
 	background-color: black;
-	color: ivory;
+	color: antiquewhite;
 	font-family: "Cascadia Code", monospace;
 	font-size: 60%;
 }
@@ -139,7 +139,7 @@ h4, p {
 }
 
 header h3, small {
-	color: ivory;
+	color: antiquewhite;
 }
 
 li {
