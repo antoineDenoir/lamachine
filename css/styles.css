@@ -145,7 +145,10 @@ header h3, small {
 li {
 	font-size: 2em;
 }
-	
+
+#nfc {
+	color: antiquewhite;
+}
 small {
 	font-size: 1.5em;
 }
