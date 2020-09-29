@@ -166,6 +166,10 @@ section > p{
 	height: 1.5em;
 }
 
+.svg:first-of-type {
+	height: 2.2em;
+}
+
 #tel {
 	font-size: 2.3em;
 }
