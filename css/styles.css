@@ -179,6 +179,7 @@ section > p{
 }
 
 #Title a {
+	  color: lightslategrey;
     position: relative;
     background-color: black;
     text-decoration: none;
