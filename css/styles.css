@@ -77,6 +77,10 @@ a {
 	text-decoration: none;
 }
 
+#bdx {
+	height: 1em;
+}
+
 #check {
 	line-height: 1em;
 	font-size: 1em;
@@ -168,10 +172,6 @@ section > p{
 
 .svg:first-of-type {
 	height: 2.2em;
-}
-
-#bdx {
-	height: 1em;
 }
 
 #tel {
