@@ -81,11 +81,6 @@ a {
 	height: 1em;
 }
 
-#check {
-	line-height: 1em;
-	font-size: 1em;
-}
-
 #cursor {
     -webkit-animation: Type 2s steps(11, end) 0.5s forwards, Blink 1s infinite;
     animation: Type 2s steps(11, end) 0.5s forwards, Blink 1s infinite;
@@ -153,6 +148,7 @@ li {
 #nfc {
 	color: antiquewhite;
 }
+
 small {
 	font-size: 1.5em;
 }
