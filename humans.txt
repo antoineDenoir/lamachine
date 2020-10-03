@@ -22,10 +22,10 @@
 
 # SITE
 
-    Last update: 2020/09
+    Last update: 2020/10
     Language: French
     Doctype: HTML5
-    IDE: Textastic, Working Copy, VSCodium
+    IDE: Textastic, Working Copy, Vectornator, VSCodium
 
 # TECHNOLOGY COLOPHON
 
