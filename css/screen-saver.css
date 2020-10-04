@@ -164,8 +164,8 @@
 }
 
 .crt::after {
-	-webkit-animation: ScanLines 1s 300s forwards;
-	animation: ScanLines 1s 300s forwards;
+	-webkit-animation: ScanLines 0.5s 300s forwards;
+	animation: ScanLines 0.5s 300s forwards;
   content: " ";
   display: block;
   position: fixed;
@@ -180,8 +180,8 @@
 }
 
 .crt::before {
-	-webkit-animation: ScanLines 1s 300s forwards;
-	animation: ScanLines 1s 300s forwards;
+	-webkit-animation: ScanLines 0.5s 300s forwards;
+	animation: ScanLines 0.5s 300s forwards;
   content: " ";
   display: block;
   position: fixed;
