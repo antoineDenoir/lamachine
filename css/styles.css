@@ -31,14 +31,14 @@
 	to {visibility: visible;}
 }
 
-@-webkit-keyframes Type {
+@-webkit-keyframes Typing {
     from,to {width: 100%;}
     25% {width: 0;}
     50% {width: 0;}
     75% {width: 100%;}
 }
 
-@keyframes Type {
+@keyframes Typing {
     from {width: 100%;}
     to {width: 0;}
 }
@@ -86,8 +86,8 @@ article > h2 {
 }
 
 #cursor {
-    -webkit-animation: Type 2s steps(11, end) 0.5s forwards, Blink 1s infinite;
-    animation: Type 2s steps(11, end) 0.5s forwards, Blink 1s infinite;
+    -webkit-animation: Typing 2s steps(11, end) 0.5s forwards, Blink 1s infinite;
+    animation: Typing 2s steps(11, end) 0.5s forwards, Blink 1s infinite;
     position: absolute;
     top: 0;
     bottom: 0;
