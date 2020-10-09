@@ -112,10 +112,10 @@ article > h2 {
 }
 
 #daemon {
-    animation: Daemon 1s linear 10s;
+    animation: Daemon 3s linear 10s;
     text-decoration: none;
     visibility: hidden;
-    -webkit-animation: Daemon 1s linear 10s;
+    -webkit-animation: Daemon 3s linear 10s;
 }
 
 dfn, sup {
