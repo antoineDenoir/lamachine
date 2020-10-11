@@ -26,8 +26,17 @@
 }
 
 @-webkit-keyframes Daemon {
-    from {visibility: hidden;}
-    to {visibility: visible;}
+    from {
+			visibility: hidden;
+			width:0;
+      height:0;
+				
+		}
+    to {
+			visibility: visible;
+		  width:initial;
+      height:initial;
+		}
 }
 
 @keyframes Daemon {

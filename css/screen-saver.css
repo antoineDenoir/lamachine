@@ -583,3 +583,36 @@
   animation: Noise-2 15s infinite linear alternate-reverse;
   -webkit-animation: Noise-2 15s infinite linear alternate-reverse;
 }
+
+@keyframes Poof {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+
+@-webkit-keyframes Poof {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+
+#svgs {
+    -moz-animation: Poof 0s ease-in 300s forwards;
+    /* Firefox */
+    -webkit-animation: Poof 0s ease-in 300s forwards;
+    /* Safari and Chrome */
+    -o-animation: Poof 0s ease-in 300s forwards;
+    /* Opera */
+    animation: Poof 0s ease-in 300s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+#pay {
+  animation: Daemon 1s 300s forwards;
+	visibility: hidden;
+}
