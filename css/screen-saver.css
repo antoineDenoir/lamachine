@@ -144,7 +144,26 @@
   }
 }
 
-@-webkit-keyframes Noise {
+@-webkit-keyframes Daemon {
+    from {
+			visibility: hidden;
+			width:0;
+      height:0;
+				
+		}
+    to {
+			visibility: visible;
+		  width:initial;
+      height:initial;
+		}
+}
+
+@keyframes Daemon {
+    from {visibility: hidden;}
+    to {visibility: visible;}
+}
+
+@-webkit-keyframes Glitch {
   0% {
     -webkit-clip-path: inset(40% 0 16% 0);
             clip-path: inset(40% 0 16% 0);
@@ -231,7 +250,7 @@
   }
 }
 
-@keyframes Noise {
+@keyframes Glitch {
   0% {
     -webkit-clip-path: inset(40% 0 16% 0);
             clip-path: inset(40% 0 16% 0);
@@ -318,7 +337,7 @@
   }
 }
 
-@-webkit-keyframes Noise-2 {
+@-webkit-keyframes GlitchDos {
   0% {
     -webkit-clip-path: inset(33% 0 68% 0);
             clip-path: inset(33% 0 68% 0);
@@ -405,7 +424,7 @@
   }
 }
 
-@keyframes Noise-2 {
+@keyframes GlitchDos {
   0% {
     -webkit-clip-path: inset(33% 0 68% 0);
             clip-path: inset(33% 0 68% 0);
@@ -490,6 +509,22 @@
     -webkit-clip-path: inset(59% 0 4% 0);
             clip-path: inset(59% 0 4% 0);
   }
+}
+
+@keyframes Poof {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+
+@-webkit-keyframes Poof {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
 }
 
 @-webkit-keyframes ScanLines {
@@ -551,6 +586,13 @@
 	z-index: 10000;
 }
 
+#daemon {
+    animation: Daemon 2s linear 10s;
+    text-decoration: none;
+    visibility: hidden;
+    -webkit-animation: Daemon 2s linear 10s;
+}
+
 .glitch {
   color: white;
   position: relative;
@@ -567,8 +609,8 @@
   color: white;
   background: black;
   overflow: hidden;
-  -webkit-animation: Noise 2s infinite linear alternate-reverse;
-  animation: Noise 2s infinite linear alternate-reverse;
+  -webkit-animation: Glitch 2s infinite linear alternate-reverse;
+  animation: Glitch 2s infinite linear alternate-reverse;
 }
 
 .glitch::before {
@@ -580,39 +622,19 @@
   color: white;
   background: black;
   overflow: hidden;
-  animation: Noise-2 15s infinite linear alternate-reverse;
-  -webkit-animation: Noise-2 15s infinite linear alternate-reverse;
+  animation: GlitchDos 15s infinite linear alternate-reverse;
+  -webkit-animation: GlitchDos 15s infinite linear alternate-reverse;
 }
 
-@keyframes Poof {
-    to {
-        width:0;
-        height:0;
-        overflow:hidden;
-    }
-}
-
-@-webkit-keyframes Poof {
-    to {
-        width:0;
-        height:0;
-        visibility:hidden;
-    }
+#pay {
+	-webkit-animation: Daemon 1s 300s forwards;
+  animation: Daemon 1s 300s forwards;
+	visibility: hidden;
 }
 
 #svgs {
     -moz-animation: Poof 0s ease-in 300s forwards;
-    /* Firefox */
     -webkit-animation: Poof 0s ease-in 300s forwards;
-    /* Safari and Chrome */
     -o-animation: Poof 0s ease-in 300s forwards;
-    /* Opera */
     animation: Poof 0s ease-in 300s forwards;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-
-#pay {
-  animation: Daemon 1s 300s forwards;
-	visibility: hidden;
 }
