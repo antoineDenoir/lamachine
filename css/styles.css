@@ -37,6 +37,14 @@
     to {width: 0;}
 }
 
+/*Smooth scrolling IF user doesn't have a preference due to motion sensitivities*/
+@media screen and (prefers-reduced-motion: no-preference) {
+  html,
+  body {
+    scroll-behavior: smooth;
+  }
+}
+
 html {
     background-color: black;
     color: antiquewhite;
@@ -48,14 +56,6 @@ body {
     margin: auto;
     max-width: 600px;
     padding: 2em;
-}
-
-/*Smooth scrolling IF user doesn't have a preference due to motion sensitivities*/
-@media screen and (prefers-reduced-motion: no-preference) {
-  html,
-  body {
-    scroll-behavior: smooth;
-  }
 }
 
 a {
@@ -70,17 +70,8 @@ a {
     text-decoration-thickness: 1px;
 }
 
-article > h2 {
+article > h2, strong, #tel {
     color: orangered;
-}
-
-#arrow {
-    bottom: 0;
-    font-size: 3em;
-    font-weight: normal;
-    position: initial;
-    right: 0;
-    text-decoration: none;
 }
 
 #bdx, #gdc {
@@ -101,12 +92,8 @@ article > h2 {
     width: 100%;
 }
 
-dfn, h1, h2, h3, sup {
+dfn, h1, h2, h3, sup, #Title a {
     color: lightslategrey;
-}
-
-footer, section {
-    padding: 3em 0 3em 0;
 }
 
 footer {
@@ -114,7 +101,11 @@ footer {
     padding-top: 10em;
 }
 
-h1, h2, h3 {
+footer, section {
+    padding: 3em 0 3em 0;
+}
+
+#arrow, h1, h2, h3, h4, p, strong, #tel {
     font-weight: normal;
 }
 
@@ -130,30 +121,20 @@ h3 {
     font-size: 2.5em;
 }
 
-h4, p {
+h4, li, p {
     font-size: 2em;
-    font-weight: normal;
 }
 
 header h3, #nfc, small {
     color: antiquewhite;
 }
 
-li {
-    font-size: 2em;
-}
-
 small {
     font-size: 1.5em;
 }
 
-strong, #tel {
-    color: orangered;
-    font-weight: normal;
-}
-
 section > p {
-    margin-bottom: 2em;
+	margin-bottom: 2em;
 }
 
 .svg {
@@ -170,7 +151,6 @@ section > p {
 
 #Title a {
     background-color: black;
-    color: lightslategrey;
     position: relative;
     text-decoration: none;
 }

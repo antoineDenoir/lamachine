@@ -626,12 +626,6 @@
   -webkit-animation: GlitchDos 15s infinite linear alternate-reverse;
 }
 
-#pay {
-	-webkit-animation: Daemon 1s 300s forwards;
-  animation: Daemon 1s 300s forwards;
-	visibility: hidden;
-}
-
 #svgs {
     -moz-animation: Poof 0s ease-in 300s forwards;
     -webkit-animation: Poof 0s ease-in 300s forwards;
