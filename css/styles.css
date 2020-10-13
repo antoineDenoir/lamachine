@@ -19,7 +19,6 @@
     from, to {border-color: transparent;}
     50% {border-color: orangered;}
 }
-
 @keyframes Blink {
     from, to {border-color: transparent;}
     50% {border-color: orangered;}
@@ -80,11 +79,11 @@ article > h2, strong, #tel {
 
 #cursor {
     -webkit-animation: Typing 2s steps(11, end) 0.5s forwards, Blink 1s infinite;
-    -webkit-box-sizing: border-box;
     animation: Typing 2s steps(11, end) 0.5s forwards, Blink 1s infinite;
     background: black;
     border-left: 0.1em solid;
     bottom: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: absolute;
     right: 0;

@@ -546,13 +546,13 @@
 }
 
 .crt {
-  -webkit-animation: CRT 4.6s 300s infinite;
-  animation: CRT 4.6s 300s infinite;
+  -webkit-animation: CRT 4.6s 600s infinite;
+  animation: CRT 4.6s 600s infinite;
 }
 
 .crt::after {
-	-webkit-animation: ScanLines 0.5s 300s forwards;
-	animation: ScanLines 0.5s 300s forwards;
+	-webkit-animation: ScanLines 0.5s 600s forwards;
+	animation: ScanLines 0.5s 600s forwards;
   content: " ";
   display: block;
   position: fixed;
@@ -568,8 +568,8 @@
 }
 
 .crt::before {
-	-webkit-animation: ScanLines 0.5s 300s forwards;
-	animation: ScanLines 0.5s 300s forwards;
+	-webkit-animation: ScanLines 0.5s 600s forwards;
+	animation: ScanLines 0.5s 600s forwards;
   content: " ";
   display: block;
   position: fixed;
@@ -577,8 +577,10 @@
   left: 0;
   bottom: 0;
   right: 0;
+	background: -moz-linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), -moz-linear-gradient(left, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+	background: -ms-linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), -ms-linear-gradient(left, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+	background: -o-linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), -o-linear-gradient(left, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(18, 16, 16, 0)), color-stop(50%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0.06)), color-stop(rgba(0, 255, 0, 0.02)), to(rgba(0, 0, 255, 0.06)));
-  background: -o-linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), -o-linear-gradient(left, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
   background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
@@ -587,10 +589,13 @@
 }
 
 #daemon {
+    -moz-animation: Daemon 2s linear 10s;
+		-ms-animation: Daemon 2s linear 10s;
+		-o-animation: Daemon 2s linear 10s;
+    -webkit-animation: Daemon 2s linear 10s;
     animation: Daemon 2s linear 10s;
     text-decoration: none;
     visibility: hidden;
-    -webkit-animation: Daemon 2s linear 10s;
 }
 
 .glitch {
@@ -601,6 +606,11 @@
 }
 
 .glitch::after {
+	-moz-animation: Glitch 2s infinite linear alternate-reverse;
+  -ms-animation: Glitch 2s infinite linear alternate-reverse;
+  -o-animation: Glitch 2s infinite linear alternate-reverse;
+  -webkit-animation: Glitch 2s infinite linear alternate-reverse;
+  animation: Glitch 2s infinite linear alternate-reverse;
   content: attr(data-text);
   position: absolute;
   left: 2px;
@@ -609,11 +619,14 @@
   color: white;
   background: black;
   overflow: hidden;
-  -webkit-animation: Glitch 2s infinite linear alternate-reverse;
-  animation: Glitch 2s infinite linear alternate-reverse;
 }
 
 .glitch::before {
+	-moz-animation: GlitchDos 15s infinite linear alternate-reverse;
+  -ms-animation: GlitchDos 15s infinite linear alternate-reverse;
+  -o-animation: GlitchDos 15s infinite linear alternate-reverse;
+  -webkit-animation: GlitchDos 15s infinite linear alternate-reverse;
+  animation: GlitchDos 15s infinite linear alternate-reverse;
   content: attr(data-text);
   position: absolute;
   left: -2px;
@@ -622,13 +635,12 @@
   color: white;
   background: black;
   overflow: hidden;
-  animation: GlitchDos 15s infinite linear alternate-reverse;
-  -webkit-animation: GlitchDos 15s infinite linear alternate-reverse;
 }
 
 #svgs {
-    -moz-animation: Poof 0s ease-in 300s forwards;
-    -webkit-animation: Poof 0s ease-in 300s forwards;
-    -o-animation: Poof 0s ease-in 300s forwards;
-    animation: Poof 0s ease-in 300s forwards;
+    -moz-animation: Poof 0s ease-in 600s forwards;
+		-ms-animation: Poof 0s ease-in 600s forwards;
+    -o-animation: Poof 0s ease-in 600s forwards;
+    -webkit-animation: Poof 0s ease-in 600s forwards;
+    animation: Poof 0s ease-in 600s forwards;
 }
