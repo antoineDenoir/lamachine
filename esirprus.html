@@ -1,172 +1,108 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-  
-  <meta charset="utf-8">
-  <title>Esirprus</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/screen-saver.css">
-  
-  <style>
-    /*
-    * Prefixed by https://autoprefixer.github.io
-    * PostCSS: v7.0.29,
-    * Autoprefixer: v9.7.6
-    * Browsers: last 4 version
-    */
     
-    @-webkit-keyframes Tip {
-      0%{     color: transparent;}
-      50%{    color: lightslategrey;}
-      100%{   color: transparent;}
-    }
+    <meta charset="utf-8">
+    <title>Esirprus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/screen-saver.css">
     
-    @keyframes Tip {
-      0%{     color: transparent;}
-      50%{    color: lightslategrey;}
-      100%{   color: transparent;}
-    }
+    <style>
+        /*
+        * Prefixed by https://autoprefixer.github.io
+        * PostCSS: v7.0.29,
+        * Autoprefixer: v9.7.6
+        * Browsers: last 4 version
+        */
+        
+        * {
+            line-height: 1.5em;
+            margin: 0;
+        }
+        
+        html {
+					  display: table;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+        }
+        
+        body {
+            display: table-cell;
+            max-width: 600px;
+            vertical-align: middle;
+        }
+        
+        a {
+            color: orangered;
+            font-size: 2em;
+        }
+        
+        #bon {
+            display: none;
+        }
+        
+        #bon:target {
+            display: initial;
+            left:0vw;
+        }
+        
+        .glitch {
+            width: auto;
+        }
+        
+        .glitch::after, .glitch::before {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        h2 {
+            color: ivory;
+        }
+    </style>
     
-    @-webkit-keyframes Toasty {
-      0% {bottom: -260px; right: -260px;}
-      40% {bottom: -18px; right: 10px;}
-      80% {bottom: -18px; right: 10px;}
-      100% {bottom: -260px; right: -260px;}
-    }
-    
-    @keyframes Toasty {
-      0% {bottom: -260px; right: -260px;}
-      40% {bottom: -18px; right: 10px;}
-      80% {bottom: -18px; right: 10px;}
-      100% {bottom: -260px; right: -260px;}
-    }
-    
-    * {
-      line-height: 1.4em;
-      margin: 0;
-    }
-    
-    html {
-      background-color: black;
-      color: ivory;
-      display: table;
-      font-family: "Cascadia Code", monospace;
-      height: 100%;
-      text-align: center;
-      width: 100%;
-    }
-    
-    body {
-      display: table-cell;
-      max-width: 600px;
-      vertical-align: middle;
-    }
-    
-    a {
-      color: orangered;
-      font-size: 2em;
-    }
-
-    #bon {
-      display: none;
-    }
-    
-    #bon:target {
-      display: initial;
-      left:0vw;
-    }
-    
-    .Dan {
-      -webkit-animation: Toasty 2s ease-out 200s alternate forwards;
-      animation: Toasty 2s ease-out 200s alternate forwards;
-      bottom: -260px;
-      display: block;
-      min-width: 200px;
-      padding: 0;
-      position: fixed;
-      right: 10px;
-    }
-    
-    .Dan:focus,
-    .Dan:hover {
-      -ms-transform: rotate(1080deg);
-      -o-transition: all 2s;
-      -webkit-animation-play-state: paused;
-      -webkit-transform: rotate(1080deg);
-      -webkit-transition: all 2s;
-      animation-play-state: paused;
-      transform: rotate(1080deg);
-      transition: all 2s;
-    }
-   
-		.glitch {
-			width: auto;
-		}
-		
-		.glitch::after, .glitch::before {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-		}
-		
-    h2 {
-      color: ivory;
-    }
-    
-    .tip {
-      -webkit-animation: Tip 1s linear 180s 10;
-      animation: Tip 1s linear 180s 10;
-      bottom: 20px;
-      color: transparent;
-      display: block;
-      position: fixed;
-      right: 20px;
-    }
-  </style>
-  
 </head>
 
 <body class="crt">
-  
-  <h1 class="glitch" data-text="Surprise">Esirprus</h1>
-  
-  <h2>Page inexistante</h2>
-  
-  <p>Désolé mais la page que vous voyez n’existe pas.<br>Mais rien ne vous empêche de rester à l’admirer un moment...</p>
-  
-  <a href="index.html">Retour à la Page d'Accueil</a>
-
-  <audio id="Toasty" src="sound/Toasty.mp3" preload="auto"></audio>
-  <audio id="Applause" src="sound/Applause.mp3" preload="auto"></audio>
-  
-  <a href="#bon"><img class="Dan" src="img/Toasty.png" title="Dan"/></a>
-  <br>
-  <p id="bon"><br>Félicitations !!!<br>Vous venez de gagner un Bon de Réduction de 25%<br>pour un Audit de l'appareil de votre choix.<br>Le mot de passe à communiquer pour pouvoir en bénéficier est:<br><strong>MACHIN</strong></p>
-  
-  <p class="tip">Encore un peu de patience...</p>
-  
-  <script type="text/javascript">
     
-    setTimeout(function(){
-      document.getElementById("Toasty").play();
-      
-    }, 2645)
+    <h1 class="glitch" data-text="Surprise">Esirprus</h1>
     
-  </script>
-  
-  <script type="text/javascript">
+    <h2>Page inexistante</h2>
     
-    setTimeout(function(){
-      document.getElementById("Applause").play();
-      
-    }, 1000)
+    <p>Désolé mais la page que vous voyez n’existe pas.<br>Mais rien ne vous empêche de rester à l’admirer un moment...<br><span id="bon"><br>Félicitations !!!<br>Vous venez de gagner un Bon de Réduction de 25%<br>pour un Audit de l'appareil de votre choix.<br>Le mot de passe à communiquer pour pouvoir en bénéficier est:<br><strong>MACHIN</strong></span><br><br></p>
     
-  </script>
-  
+    <a href="index.html">Retour à la Page d'Accueil</a>
+    
+    <audio id="Toasty" src="sound/Toasty.mp3" preload="auto"></audio>
+    <audio id="Applause" src="sound/Applause.mp3" preload="auto"></audio>
+    
+    <a href="#bon"><img class="Tobias" src="img/Tobias.gif" title="Tobias"/></a>
+    
+    <p class="tip">Encore un peu de patience...</p>
+    
+    <script type="text/javascript">
+        
+        setTimeout(function(){
+            document.getElementById("Toasty").play();
+            
+        }, 2645)
+        
+    </script>
+    
+    <script type="text/javascript">
+        
+        setTimeout(function(){
+            document.getElementById("Applause").play();
+            
+        }, 1000)
+        
+    </script>
+    
 </body>
 
 </html>

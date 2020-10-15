@@ -15,27 +15,6 @@
     src:url("fonts/CascadiaCodePL.ttf") format("truetype");
 }
 
-@-webkit-keyframes Blink {
-    from, to {border-color: transparent;}
-    50% {border-color: orangered;}
-}
-@keyframes Blink {
-    from, to {border-color: transparent;}
-    50% {border-color: orangered;}
-}
-
-@-webkit-keyframes Typing {
-    from,to {width: 100%;}
-    25% {width: 0;}
-    50% {width: 0;}
-    75% {width: 100%;}
-}
-
-@keyframes Typing {
-    from {width: 100%;}
-    to {width: 0;}
-}
-
 /*Smooth scrolling IF user doesn't have a preference due to motion sensitivities*/
 @media screen and (prefers-reduced-motion: no-preference) {
   html,
@@ -67,6 +46,10 @@ a {
     text-decoration-skip-ink: auto;
     text-decoration-style: underline;
     text-decoration-thickness: 1px;
+}
+
+a:hover {
+    cursor: help;
 }
 
 article > h2, strong, #tel {
