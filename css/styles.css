@@ -23,6 +23,28 @@
   }
 }
 
+@-webkit-keyframes Blink {
+    from, to {border-color: transparent;}
+    50% {border-color: orangered;}
+}
+
+@keyframes Blink {
+    from, to {border-color: transparent;}
+    50% {border-color: orangered;}
+}
+
+@-webkit-keyframes Typing {
+    from,to {width: 100%;}
+    25% {width: 0;}
+    50% {width: 0;}
+    75% {width: 100%;}
+}
+
+@keyframes Typing {
+    from {width: 100%;}
+    to {width: 0;}
+}
+
 html {
     background-color: black;
     color: antiquewhite;

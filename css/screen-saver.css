@@ -26,6 +26,7 @@
     from, to {border-color: transparent;}
     50% {border-color: orangered;}
 }
+
 @keyframes Blink {
     from, to {border-color: transparent;}
     50% {border-color: orangered;}
